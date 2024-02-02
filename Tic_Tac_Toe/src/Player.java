@@ -1,18 +1,26 @@
-import java.util.Scanner;
 public class Player {
-    private String choix;
+    private String representation;
 
 
-    public Player(){
-        this.choix = "";
+    public Player(String representation){
+
+        this.representation = representation;
     }
 
-    public String getChoix(){
-        return this.choix;
+    /**
+     * Renvoie la representation du player
+     * @return : String
+     * */
+    public String getRepresentation(){
+        return this.representation;
     }
 
-    public void setChoix(String choix) {
-        this.choix = choix;
+    /**
+     * Modifie la representation du player
+     * */
+
+    public void setRepresentation(String representation) {
+        this.representation = representation;
     }
 
 }
